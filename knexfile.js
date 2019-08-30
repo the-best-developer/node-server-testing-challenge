@@ -12,6 +12,12 @@ module.exports = {
   "jest": {
     "testEnvirnoment": "node"
   },
-  test: "jest --watch --verbose"
-
+  test: "jest --watch --verbose",
+  testing: {
+    client: 'sqlite3',
+    connection: {
+      filename: './database/test.db3',
+    },
+    useNullAsDefault: true,
+  }
 };
